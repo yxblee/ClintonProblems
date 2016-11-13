@@ -2,12 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.google.firebase.Reach">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +27,6 @@
             android:value="0qwUu5KFEDxaNuqZUNan"/>
         <meta-data android:name="com.here.android.maps.apptoken"
             android:value="ze2ALe63RS1tiB9cse8xoQ"/>
-        <meta-data android:name="com.here.android.maps.license.key"
-            android:value="{YOUR_LICENSE_KEY}"/>
 
         <service
             android:name="com.here.android.mpa.service.MapService"

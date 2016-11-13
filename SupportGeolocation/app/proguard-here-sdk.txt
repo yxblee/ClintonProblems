@@ -1,0 +1,32 @@
+#
+# Please see http://proguard.sourceforge.net/#manual/usage.html
+# to understand the proguard options and class template syntax
+#
+
+#
+# HERE SDK specific rules
+#
+
+-keepattributes Signature
+-keepattributes *Annotation*
+
+-dontwarn com.here.**
+-dontwarn com.nokia.**
+-dontwarn com.here.**$*
+-dontwarn com.nokia.**$*
+-dontwarn com.google.android.gson.**
+
+-keep class com.here.** { *; }
+-keep class com.here.**$* { *; }
+-keep class com.nokia.** { *; }
+-keep class com.nokia.**$* { *; }
+
+-keep interface com.here.** { *; }
+-keep interface com.here.**$* { *; }
+-keep interface com.nokia.** { *; }
+-keep interface com.nokia.**$* { *; }
+
+-keep class com.google.gson.** { *; }
+-keep class com.here.hac.** { *; }
+-keep class com.segment.analytics.** { *; }
+-keep class com.here.hype.** { *; }
