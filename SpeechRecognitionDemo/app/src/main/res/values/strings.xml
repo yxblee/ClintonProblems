@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Ep8</string>
+    <string name="hello_world">Hello Dave</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_ep8">Ep8Activity</string>
+
+</resources>
