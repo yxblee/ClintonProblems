@@ -30,7 +30,7 @@ public class VoiceRecognitionActivity extends AppCompatActivity {
     private Button mbtSpeak;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {/home/yblee/Programming/AngelHack-Lady_Problem/CrystalReach/Reach
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voice_recognition);
 
